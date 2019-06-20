@@ -1,0 +1,53 @@
+
+[#main]
+== Main content
+
+This is where you place the main content, and the following
+serves as a placeholder for your text.
+
+Subsections are used here for demonstration purposes.
+
+=== Getting started
+
+The Metanorma and RFC toolchains *MUST* be available locally to
+build this document template.
+
+
+==== Metanorma toolchain
+
+You will need to have:
+
+. Ruby: for running Metanorma
+
+[loweralpha]
+.. `metanorma-cli` gem: for the Metanorma command-line interface
+
+.. `metanorma-ietf` gem: for converting AsciiRFC into XML RFC
+  (v2 or v3)
+
+
+==== XML RFC toolchain
+
+You will need to have:
+
+. Python: for running `xml2rfc`
+[loweralpha]
+.. `xml2rfc`: for converting RFC XML (v2 or v3) into TXT
+.. `idnits`: for submission preflight
+
+
+=== Referencing external content
+
+* This is a published RFC <<RFC7253>>
+
+* This is an Internet-Draft <<I-D.ribose-asciirfc>>
+
+* This is an external reference <<RNP>>
+
+
+[#code-snippets]
+=== Code snippets
+
+Code snippets should be wrapped with `<CODE BEGINS>` and
+`<CODE ENDS>` blocks, as required by the IETF Trust Legal
+Provisions (TLP) <<IETF.TLP,4 parens>> specified in <<RFC5378>>.

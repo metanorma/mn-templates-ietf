@@ -1,0 +1,14 @@
+= IETF Metanorma Templates
+
+This GitHub repository contains templates for IETF documents.
+
+Note that the Apache license applies only to the template.
+Once a document has been created, the license must reflect the IETF document license.
+
+This repository is used by the `metanorma new` command to create new documents.
+
+== Document types
+
+These document types (``doctype``s) are supported in this template repository:
+
+* `rfc`

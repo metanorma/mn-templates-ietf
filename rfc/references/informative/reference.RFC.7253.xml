@@ -1,0 +1,20 @@
+<reference anchor='RFC7253' 
+  target='https://www.rfc-editor.org/info/rfc7253'>
+  <front>
+    <title>The OCB Authenticated-Encryption Algorithm</title>
+    <author initials='T.' surname='Krovetz' fullname='T. Krovetz'>
+      <organization />
+    </author>
+    <author initials='P.' surname='Rogaway' fullname='P. Rogaway'>
+      <organization />
+    </author>
+    <date year='2014' month='May' />
+    <abstract><t>This document specifies OCB, a shared-key 
+        blockcipher-based encryption scheme that provides 
+        confidentiality and authenticity for plaintexts and 
+        authenticity for associated data.  This document is a product 
+        of the Crypto Forum Research Group (CFRG).</t></abstract>
+  </front>
+  <seriesInfo name='RFC' value='7253'/>
+  <seriesInfo name='DOI' value='10.17487/RFC7253'/>
+</reference>

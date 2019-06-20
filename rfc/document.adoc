@@ -1,0 +1,49 @@
+= A Minimal Internet-Draft In AsciiRFC
+:doctype: internet-draft
+:name: draft-asciirfc-minimal-03
+:abbrev: AsciiRFC Example
+:status: informational
+:ipr: trust200902
+:submissionType: individual
+:area: Internet
+:intended-series: full-standard
+:revdate: 2018-12-12T00:00:00Z
+:fullname: Josiah Stinkney Carberry
+:lastname: Carberry
+:forename_initials: J. S.
+:organization: Brown University
+:phone: +1 401 863 1000
+:street: Box K, 69 Brown Street
+:city: Providence
+:code: 02912
+:country: United States of America
+:uri: https://www.brown.edu
+:email: josiah.carberry@ribose.com
+:fullname_2: Truman Grayson
+:lastname_2: Grayson
+:forename_initials_2: T.
+:organization_2: Brown University
+:phone_2: +1 401 863 1000
+:street_2: Box G, 69 Brown Street
+:city_2: Providence
+:code_2: 02912
+:country_2: United States of America
+:uri_2: https://www.brown.edu
+:email_2: truman.grayson@ribose.com
+:docfile: draft-asciirfc-minimal.adoc
+:mn-document-class: ietf
+:mn-output-extensions: xmlrfc2,txt,html,nits
+
+include::sections/00-abstract.adoc[]
+include::sections/01-intro.adoc[]
+include::sections/02-conventions.adoc[]
+include::sections/03-symbols.adoc[]
+include::sections/04-content.adoc[]
+include::sections/10-security.adoc[]
+include::sections/11-iana.adoc[]
+include::sections/99-acknowledgements.adoc[]
+
+// References must be given before appendixes
+include::sections/98-references.adoc[]
+include::sections/97-examples.adoc[]
+

@@ -1,0 +1,30 @@
+<reference anchor="RFC5378"
+  target="https://www.rfc-editor.org/info/rfc5378">
+  <front>
+  <title>Rights Contributors Provide to the IETF Trust</title>
+  <author initials="S."
+    surname="Bradner" fullname="S. Bradner" role="editor">
+    <organization/>
+  </author>
+  <author initials="J."
+    surname="Contreras" fullname="J. Contreras" role="editor">
+    <organization/>
+  </author>
+  <date year="2008" month="November"/>
+  <abstract><t>The IETF policies about rights in Contributions
+    to the IETF are designed to ensure that such Contributions
+    can be made available to the IETF and Internet communities
+    while permitting the authors to retain as many rights as
+    possible. This memo details the IETF policies on rights in
+    Contributions to the IETF. It also describes the
+    objectives that the policies are designed to meet. This
+    memo obsoletes RFCs 3978 and 4748 and, with BCP 79 and
+    RFC 5377, replaces Section 10 of RFC 2026. This document
+    specifies an Internet Best Current Practices for the
+    Internet Community, and requests discussion and
+    suggestions for improvements.</t></abstract>
+  </front>
+  <seriesInfo name="BCP" value="78"/>
+  <seriesInfo name="RFC" value="5378"/>
+  <seriesInfo name="DOI" value="10.17487/RFC5378"/>
+</reference>

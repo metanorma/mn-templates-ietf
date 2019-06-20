@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<reference anchor='I-D.ribose-asciirfc'>
+<front>
+<title>AsciiRFC: Authoring Internet-Drafts And RFCs Using AsciiDoc</title>
+
+<author initials='R' surname='Tse' fullname='Ronald Tse'>
+    <organization />
+</author>
+
+<author initials='N' surname='Nicholas' fullname='Nick Nicholas'>
+    <organization />
+</author>
+
+<author initials='P' surname='Brasolin' fullname='Paolo Brasolin'>
+    <organization />
+</author>
+
+<date month='April' day='17' year='2018' />
+
+<abstract><t>This document describes an AsciiDoc syntax extension called AsciiRFC, designed for authoring IETF Internet-Drafts and RFCs.  AsciiDoc is a human readable document markup language which affords more granular control over markup than comparable schemes such as Markdown.  The AsciiRFC syntax is designed to allow the author to entirely focus on text, providing the full power of the resulting RFC XML through the AsciiDoc language, while abstracting away the need to manually edit XML, including references.  This document itself was written and generated into RFC XML v2 (RFC7749) and RFC XML v3 (RFC7991) directly through asciidoctor-rfc, an AsciiRFC generator.</t></abstract>
+
+</front>
+
+<seriesInfo name='Internet-Draft' value='draft-ribose-asciirfc-08' />
+<format type='TXT'
+        target='http://www.ietf.org/internet-drafts/draft-ribose-asciirfc-08.txt' />
+</reference>

@@ -1,0 +1,11 @@
+
+[#introduction]
+== Introduction
+
+AsciiRFC <<I-D.ribose-asciirfc>> is an extremely simple way to
+author Internet-Drafts and RFCs without needing to manually
+craft RFC XML conforming to <<RFC7991>>.
+
+This is a template specifically made for authors to easily
+start with creating an Internet-Draft conforming to <<RFC7991>>
+and submittable to the IETF datatracker.

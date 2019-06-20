@@ -1,0 +1,7 @@
+
+[#symbols]
+== Symbols And Abbreviations
+
+ADRFC::
+  abbreviated form of _AsciiRFC_
+

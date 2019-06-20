@@ -1,0 +1,15 @@
+
+[bibliography]
+== Normative References
+
+++++
+include::../references/normative/*[]
+++++
+
+[bibliography]
+== Informative References
+
+++++
+include::../references/informative/*.xml[]
+++++
+

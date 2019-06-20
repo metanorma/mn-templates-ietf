@@ -1,0 +1,10 @@
+<reference anchor='IETF.TLP'
+  target='https://trustee.ietf.org/trust-legal-provisions.html'>
+  <front>
+  <title>IETF Trust Legal Provisions (TLP)</title>
+  <author>
+    <organization>IETF</organization>
+  </author>
+  <date month='April' day='12' year='2018' />
+  </front>
+</reference>

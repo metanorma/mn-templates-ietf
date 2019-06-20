@@ -1,0 +1,20 @@
+
+[#security]
+== Security Considerations
+
+Any security considerations should be placed here.
+
+As described in <<main>> (here's how you refer a local anchor),
+local tools have to be installed before the document template
+can be built.
+
+Running of these local tools *MAY* produce unintended side
+effects that impact security. For example
+
+|===
+| Security issue  | Discussed in
+
+h| Confidentiality | <<RFC3552,2.1.1 of>>
+h| Data Integrity  | <<RFC3552,2.1.2 of>>
+h| Non-Repudiation | <<RFC3552,2.2 of>>
+|===

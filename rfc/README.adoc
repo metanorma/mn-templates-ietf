@@ -1,0 +1,13 @@
+= RFC template in Metanorma
+
+== Content
+
+This repository contains the content for an IETF RFC document.
+
+* `document.adoc` - the main standard document with references to all sections
+* remaining ``adoc``s - each section of the standard document is in a separate document: follow directions in each document to populate
+* `references` - RFC XML references
+
+== Building
+
+Run `make`.
