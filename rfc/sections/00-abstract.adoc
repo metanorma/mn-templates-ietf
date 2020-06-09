@@ -1,5 +1,7 @@
-[abstract]
 
+[[abstract-id]]
+[abstract]
+== Abstract
 This document provides a template on how to author (or migrate!)
 a new Internet-Draft / RFC in the AsciiRFC format.
 

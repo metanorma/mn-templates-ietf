@@ -1,6 +1,6 @@
 
 [appendix]
-[#appendix-a]
+[[appendix-a]]
 == Examples
 
 === Example 1
