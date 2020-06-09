@@ -1,5 +1,5 @@
 
-[#introduction]
+[[introduction]]
 == Introduction
 
 AsciiRFC <<I-D.ribose-asciirfc>> is an extremely simple way to

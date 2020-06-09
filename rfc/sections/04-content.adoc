@@ -1,5 +1,5 @@
 
-[#main]
+[[main]]
 == Main content
 
 This is where you place the main content, and the following
@@ -45,7 +45,7 @@ You will need to have:
 * This is an external reference <<RNP>>
 
 
-[#code-snippets]
+[[code-snippets]]
 === Code snippets
 
 Code snippets should be wrapped with `<CODE BEGINS>` and
