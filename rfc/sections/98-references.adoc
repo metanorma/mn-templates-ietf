@@ -1,24 +1,21 @@
-
-== Bibliography
-
 [bibliography]
-=== Normative References
+== Normative References
 
 * [[[RFC2119,RFC 2119]]], _Key words for use in RFCs to Indicate Requirement Levels_.
 * [[[RFC7991,RFC 7991]]], _The "xml2rfc" Version 3 Vocabulary_.
 * [[[RFC8174,RFC 8174]]], _ Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words_.
 
 [bibliography]
-=== Informative References
+== Informative References
 
-* [[[IETF.TLP,IETF TRUST]]], _Legal Provisions Relating to IETF Documents_.
+* [[[IETF.TLP,IETF.TLP]]], _Legal Provisions Relating to IETF Documents_.
 * [[[I-D.ribose-asciirfc,IETF(I-D.ribose-asciirfc-08)]]], _AsciiRFC: Authoring Internet-Drafts And RFCs Using AsciiDoc -- draft-ribose-asciirfc-08_.
 * [[[RFC3552,RFC 3552]]], _Guidelines for Writing RFC Text on Security Considerations_.
 * [[[RFC5378,RFC 5378]]], _Rights Contributors Provide to the IETF Trust_.
 * [[[RFC7253,RFC 7253]]], _The OCB Authenticated-Encryption Algorithm_.
 
 [%bibitem]
-==== RNP: A C library approach to OpenPGP
+=== RNP: A C library approach to OpenPGP
 id:: RNP
 contributor::
 contributor:organization.name:: Ribose Inc.
