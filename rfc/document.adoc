@@ -4,7 +4,7 @@
 :abbrev: AsciiRFC Example
 :status: informational
 :ipr: trust200902
-:submissionType: individual
+:submission-type: individual
 :area: Internet
 :intended-series: full-standard
 :revdate: 2018-12-12T00:00:00Z
@@ -30,9 +30,9 @@
 :country_2: United States of America
 :uri_2: https://www.brown.edu
 :email_2: truman.grayson@ribose.com
-:docfile: draft-asciirfc-minimal.adoc
+:docfile: document.adoc
 :mn-document-class: ietf
-:mn-output-extensions: xmlrfc2,txt,html,nits
+:mn-output-extensions: xmlrfc3,txt,html,nits
 
 include::sections/00-abstract.adoc[]
 include::sections/01-intro.adoc[]
