@@ -2,12 +2,12 @@
 :doctype: internet-draft
 :name: draft-asciirfc-minimal-03
 :abbrev: AsciiRFC Example
-:status: informational
 :ipr: trust200902
-:submission-type: individual
+:submission-type: independent
+:intended-series: informational
+:status: informational
 :area: Internet
-:intended-series: full-standard
-:revdate: 2018-12-12T00:00:00Z
+:revdate: 2018-12-12
 :fullname: Josiah Stinkney Carberry
 :lastname: Carberry
 :forename_initials: J. S.
@@ -32,7 +32,7 @@
 :email_2: truman.grayson@ribose.com
 :docfile: document.adoc
 :mn-document-class: ietf
-:mn-output-extensions: xmlrfc3,txt,html,nits
+:mn-output-extensions: rfc,txt,html,rxl
 
 include::sections/00-abstract.adoc[]
 include::sections/01-intro.adoc[]
