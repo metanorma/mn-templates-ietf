@@ -4,7 +4,7 @@ name: docker
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, main  ]
   pull_request:
     paths-ignore:
       - .github/workflows/test.yml
@@ -16,17 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     container: docker://metanorma/mn
     steps:
-      - uses: actions/checkout@master
-      - name: Checkout submodules
-        shell: bash
-        run: |
-          auth_header="$(git config --local --get http.https://github.com/.extraheader)"
-          git submodule sync --recursive
-          git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
-      - name: Setup fonts
-        run: |
-          metanorma setup --agree-to-terms
-      - name: Metanorma compile *nix
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.METANORMA_CI_PAT_TOKEN || github.token }}
+          submodules: true
+
+      - name: Metanorma compile
         shell: bash
         run: |
           source doctypes.env
@@ -35,11 +30,11 @@ jobs:
             metanorma new test/$template --type $TYPE --doctype $template --template . --overwrite
             if [ -f test/${template}/document.adoc ]
             then
-              metanorma compile test/${template}/document.adoc
+              metanorma compile --no-install-fonts test/${template}/document.adoc
             else
               for docfile in test/${template}/*.adoc
               do
-                metanorma compile $docfile
+                metanorma compile --no-install-fonts $docfile
               done
             fi
           done
