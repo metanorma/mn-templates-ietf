@@ -1,0 +1,9 @@
+---
+metanorma:
+  source:
+    files:
+      - rfc/document.adoc
+
+  collection:
+    organization: "IETF: Internet Engineering Task Force"
+    name: "IETF deliverable templates in Metanorma AsciiDoc"
