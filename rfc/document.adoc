@@ -30,20 +30,29 @@
 :country_2: United States of America
 :uri_2: https://www.brown.edu
 :email_2: truman.grayson@ribose.com
-:docfile: document.adoc
 :mn-document-class: ietf
 :mn-output-extensions: rfc,txt,html,rxl
 
+
 include::sections/00-abstract.adoc[]
+
 include::sections/01-intro.adoc[]
+
 include::sections/02-conventions.adoc[]
+
 include::sections/03-symbols.adoc[]
+
 include::sections/04-content.adoc[]
+
 include::sections/10-security.adoc[]
+
 include::sections/11-iana.adoc[]
+
 include::sections/99-acknowledgements.adoc[]
+
 
 // References must be given before appendixes
 include::sections/98-references.adoc[]
+
 include::sections/97-examples.adoc[]
 
