@@ -1,7 +1,8 @@
 = IETF Metanorma Templates
 
-image:https://github.com/metanorma/mn-templates-ietf/workflows/defaults/badge.svg["Build Status", link="https://github.com/metanorma/mn-templates-ietf/actions?query=workflow%3Adefaults"]
-image:https://github.com/metanorma/mn-templates-ietf/workflows/windows/badge.svg["Windows Build Status", link="https://github.com/metanorma/mn-templates-ietf/actions?query=workflow%3Awindows"]
+image:https://github.com/metanorma/mn-templates-ietf/workflows/test/badge.svg["Build Status", link="https://github.com/metanorma/mn-templates-ietf/actions/workflows/test.yml"]
+image:https://github.com/metanorma/mn-templates-ietf/workflows/pages/badge.svg["Windows Build Status", link="https://github.com/metanorma/mn-templates-ietf/actions/workflows/pages.yml"]
+image:https://github.com/metanorma/mn-templates-ietf/workflows/docker/badge.svg["Windows Build Status", link="https://github.com/metanorma/mn-templates-ietf/actions/workflows/docker.yml"]
 
 This GitHub repository contains templates for IETF documents.
 
