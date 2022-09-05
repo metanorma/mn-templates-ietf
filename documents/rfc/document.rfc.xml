@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<?rfc strict="yes"?>
+<?rfc compact="yes"?>
+<?rfc subcompact="no"?>
+<?rfc toc="yes"?>
+<?rfc tocdepth="4"?>
+<?rfc symrefs="yes"?>
+<?rfc sortrefs="yes"?>
+<rfc xmlns:xi="http://www.w3.org/2001/XInclude" category="info" ipr="trust200902" submissionType="independent" xml:lang="en" version="3" >
+  <front>
+    <title abbrev="AsciiRFC Example">A Minimal Internet-Draft In AsciiRFC</title>
+    <seriesInfo value="" status="Informational" stream="independent" name="Internet-Draft" asciiName="Internet-Draft"></seriesInfo>
+    <seriesInfo name="" value="" status="informational"></seriesInfo>
+    <author fullname="Josiah Stinkney Carberry">
+      <address>
+        <postal></postal>
+        <phone>+1 401 863 1000</phone>
+        <email>josiah.carberry@ribose.com</email>
+        <uri></uri>
+      </address>
+    </author>
+    <author fullname="Truman Grayson">
+      <address>
+        <postal></postal>
+        <phone>+1 401 863 1000</phone>
+        <email>truman.grayson@ribose.com</email>
+        <uri></uri>
+      </address>
+    </author>
+    <area>Internet</area>
+    <abstract anchor="abstract-id"><t anchor="_c1669d74-0c50-b82c-883f-2b8c8aff75ea">This document provides a template on how to author (or migrate!)
+a new Internet-Draft / RFC in the AsciiRFC format.</t>
+
+
+</abstract>
+    <note><t anchor="_0132818d-1b72-c5e0-f877-7bd0189b283b">This template requires usage of the Metanorma toolchain and the
+  <tt>metanorma-ietf</tt> Ruby gem.</t>
+</note>
+  </front>
+  <middle>
+    <section anchor="introduction"><name>Introduction</name>
+
+<t anchor="_702d9b5d-ea6f-54b4-f395-d7bb2f3fb388">AsciiRFC <relref target="I-D.ribose-asciirfc" section="" relative=""></relref> is an extremely simple way to
+author Internet-Drafts and RFCs without needing to manually
+craft RFC XML conforming to <relref target="RFC7991" section="" relative=""></relref>.</t>
+
+<t anchor="_39f3d791-863f-b55f-7095-02c99a1d25ac">This is a template specifically made for authors to easily
+start with creating an Internet-Draft conforming to <relref target="RFC7991" section="" relative=""></relref>
+and submittable to the IETF datatracker.</t>
+</section>
+    <section anchor="conventions"><name>Terms and definitions</name>
+<t anchor="_168bfcf8-4862-fe87-aa62-a127c6428c20">No terms and definitions are listed in this document.</t>
+
+<t anchor="_01d7607e-83c7-506f-bf21-8b4dab33aa79">The key words "<bcp14>MUST</bcp14>", "<bcp14>MUST NOT</bcp14>", "<bcp14>REQUIRED</bcp14>", "<bcp14>SHALL</bcp14>",
+"<bcp14>SHALL NOT</bcp14>", "<bcp14>SHOULD</bcp14>", "<bcp14>SHOULD NOT</bcp14>", "<bcp14>RECOMMENDED</bcp14>",
+"<strong>NOT RECOMMENDED</strong>", "<bcp14>MAY</bcp14>", and "<bcp14>OPTIONAL</bcp14>" in this
+document are to be interpreted as described in BCP 14
+<relref target="RFC2119" section="" relative=""></relref> <relref target="RFC8174" section="" relative=""></relref> when, and only when, they appear in
+all capitals, as shown here.</t>
+
+<t anchor="_34a8994b-8581-8792-aa48-f640b713e41f">This document also refers to the following terms and
+definitions:</t>
+
+<dl anchor="_b7573679-7985-836e-0eac-93db643092d3"><dt>AsciiRFC</dt><dd><t anchor="_ddf9da28-a05d-122f-a1dc-acc9835148e6">an AsciiDoc-derived syntax used for authoring RFCs and
+Internet-Drafts, as defined in <relref target="I-D.ribose-asciirfc" section="" relative=""></relref>.</t>
+</dd></dl>
+</section>
+    <section anchor="symbols"><name>Symbols And Abbreviations</name>
+
+<dl anchor="_75277d10-b0fc-a7db-0251-45ee78b1b66e"><dt>ADRFC</dt><dd><t anchor="_50d0e251-d439-5755-5998-65ad8ec90f36">abbreviated form of <em>AsciiRFC</em></t>
+</dd></dl>
+</section>
+    <section anchor="main"><name>Main content</name>
+
+<t anchor="_4d5ec47e-6958-0d17-e665-dc7fc6be196c">This is where you place the main content, and the following
+serves as a placeholder for your text.</t>
+
+<t anchor="_807141e9-8742-323c-370d-3c71742e7c38">Subsections are used here for demonstration purposes.</t>
+
+<section anchor="_getting_started"><name>Getting started</name>
+
+<t anchor="_cecbbf3c-9d3d-43e9-6afd-83cc322dbf94">The Metanorma and RFC toolchains <bcp14>MUST</bcp14> be available locally to
+build this document template.</t>
+
+<section anchor="_metanorma_toolchain"><name>Metanorma toolchain</name>
+
+<t anchor="_8b178a57-b080-98f9-10ca-9ac24e0d14a0">You will need to have:</t>
+
+<ol anchor="_0268b9ee-6971-42f4-d5cd-31a40a047245" type="1"><li>Ruby: for running Metanorma</li>
+</ol>
+
+<ol anchor="_6ab62800-2108-c54f-3092-f5baf7d5af36" type="a"><li><tt>metanorma-cli</tt> gem: for the Metanorma command-line interface</li>
+<li><tt>metanorma-ietf</tt> gem: for converting AsciiRFC into XML RFC
+(v2 or v3)</li>
+</ol>
+</section>
+
+<section anchor="_xml_rfc_toolchain"><name>XML RFC toolchain</name>
+
+<t anchor="_1d73d144-8ec1-dde2-ddb6-91d363416b10">You will need to have:</t>
+
+<ol anchor="_53fc6151-edf3-4eec-ba7e-e82c7f837360" type="1"><li><t anchor="_753009e6-284f-a668-0349-8b92421535f4">Python: for running <tt>xml2rfc</tt></t>
+<ol anchor="_06a5e4f8-d737-3d11-98e6-b88ef626a81d" type="a"><li><tt>xml2rfc</tt>: for converting RFC XML (v2 or v3) into TXT</li>
+<li><tt>idnits</tt>: for submission preflight</li>
+</ol>
+</li>
+</ol>
+</section>
+</section>
+
+<section anchor="_referencing_external_content"><name>Referencing external content</name>
+
+<ul anchor="_a5450734-0489-ca3c-b47f-84e3a802c7bb"><li>This is a published RFC <relref target="RFC7253" section="" relative=""></relref></li>
+<li>This is an Internet-Draft <relref target="I-D.ribose-asciirfc" section="" relative=""></relref></li>
+<li>This is an external reference <relref target="RNP" section="" relative=""></relref></li>
+</ul>
+</section>
+
+<section anchor="code-snippets"><name>Code snippets</name>
+
+<t anchor="_d57ffeca-d03e-0f85-152f-e74a84c56f1f">Code snippets should be wrapped with <tt>&#x3c;CODE BEGINS&#x3e;</tt> and
+<tt>&#x3c;CODE ENDS&#x3e;</tt> blocks, as required by the IETF Trust Legal
+Provisions (TLP) <relref target="IETF.TLP" section="" relative="">4 parens</relref> specified in <relref target="RFC5378" section="" relative=""></relref>.</t>
+</section>
+</section>
+    <section anchor="security"><name>Security Considerations</name>
+
+<t anchor="_14837b57-b15e-7599-6877-1e822d02d47b">Any security considerations should be placed here.</t>
+
+<t anchor="_d84c6930-e4a2-7b6f-4e69-71e4cfbfe353">As described in <xref target="main"></xref> (here's how you refer a local anchor),
+local tools have to be installed before the document template
+can be built.</t>
+
+<t anchor="_0996f65a-0bc4-5569-0f82-c3844907ac3c">Running of these local tools <bcp14>MAY</bcp14> produce unintended side
+effects that impact security. For example</t>
+
+<table anchor="_1d1d19b5-5b52-7aab-d831-95aeb3a0c47d"><thead><tr><th align="left">Security issue</th><th align="left">Discussed in</th></tr></thead><tbody><tr><th align="left">Confidentiality</th><td align="left"><relref target="RFC3552" section="" relative="">2.1.1 of</relref></td></tr><tr><th align="left">Data Integrity</th><td align="left"><relref target="RFC3552" section="" relative="">2.1.2 of</relref></td></tr><tr><th align="left">Non-Repudiation</th><td align="left"><relref target="RFC3552" section="" relative="">2.2 of</relref></td></tr></tbody></table>
+</section>
+    <section anchor="iana"><name>IANA Considerations</name>
+
+<t anchor="_3f69d77d-e072-228d-c404-fdea7937b859">This document does not require any action by IANA.</t>
+
+<t anchor="_5b4fa6fb-9dd5-ab63-98fe-0b91c1da0469">But if it does, such as proposing changes to IANA registries,
+please include them here.</t>
+</section>
+    <section anchor="acknowledgements"><name>Acknowledgements</name>
+
+<t anchor="_ea3e3e4c-8391-5c9c-50df-21ec525c6c85">The authors would like to thank their families.</t>
+</section>
+  </middle>
+  <back>
+    <references anchor="_normative_references">
+      <name>Normative References</name>
+      <reference target="https://www.rfc-editor.org/info/rfc2119" anchor="RFC2119">
+        <front>
+          <title>Key words for use in RFCs to Indicate Requirement Levels</title>
+          <author fullname="S. Bradner" asciiFullname="S. Bradner"></author>
+          <date month="March" year="1997"></date>
+          <keyword>Standards</keyword>
+          <keyword>Track</keyword>
+          <keyword>Documents</keyword>
+          <abstract>    <t anchor="_2181e408-7ed1-c78e-5dd0-84e1df7ee15d">In many standards track documents several words are used to signify the requirements in the specification.  These words are often capitalized.  This document defines these words as they should be interpreted in IETF documents.  This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.</t>
+  </abstract>
+        </front>
+        <format target="https://www.rfc-editor.org/info/rfc2119" type="src"></format>
+        <refcontent>RFC 2119</refcontent>
+        <seriesInfo value="2119" name="RFC"></seriesInfo>
+        <seriesInfo value="10.17487/RFC2119" name="DOI"></seriesInfo>
+      </reference>
+      <reference target="https://www.rfc-editor.org/info/rfc7991" anchor="RFC7991">
+        <front>
+          <title>The "xml2rfc" Version 3 Vocabulary</title>
+          <author fullname="P. Hoffman" asciiFullname="P. Hoffman"></author>
+          <date month="December" year="2016"></date>
+          <keyword>v3</keyword>
+          <keyword>xml2rfcv3</keyword>
+          <keyword>format</keyword>
+          <abstract>    <t anchor="_1b489a9a-5f26-357e-a235-1957042f7818">This document defines the "xml2rfc" version 3 vocabulary: an XML-based language used for writing RFCs and Internet-Drafts.  It is heavily derived from the version 2 vocabulary that is also under discussion.  This document obsoletes the v2 grammar described in RFC 7749.</t>
+  </abstract>
+        </front>
+        <format target="https://www.rfc-editor.org/info/rfc7991" type="src"></format>
+        <refcontent>RFC 7991</refcontent>
+        <seriesInfo value="7991" name="RFC"></seriesInfo>
+        <seriesInfo value="10.17487/RFC7991" name="DOI"></seriesInfo>
+      </reference>
+      <reference target="https://www.rfc-editor.org/info/rfc8174" anchor="RFC8174">
+        <front>
+          <title>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</title>
+          <author fullname="B. Leiba" asciiFullname="B. Leiba"></author>
+          <date month="May" year="2017"></date>
+          <abstract>    <t anchor="_00ab498b-3a10-3edd-afc6-bdfa40bc50e5">RFC 2119 specifies common key words that may be used in protocol specifications.  This document aims to reduce the ambiguity by clarifying that only UPPERCASE usage of the key words have the defined special meanings.</t>
+  </abstract>
+        </front>
+        <format target="https://www.rfc-editor.org/info/rfc8174" type="src"></format>
+        <refcontent>RFC 8174</refcontent>
+        <seriesInfo value="8174" name="RFC"></seriesInfo>
+        <seriesInfo value="10.17487/RFC8174" name="DOI"></seriesInfo>
+      </reference>
+    </references>
+    <references anchor="_informative_references">
+      <name>Informative References</name>
+      <reference anchor="IETF.TLP">
+        <front>
+          <title>Legal Provisions Relating to IETF Documents.</title><author surname="Unknown"></author>
+        </front>
+        <refcontent>IETF.TLP</refcontent>
+      </reference>
+      <reference anchor="I-D.ribose-asciirfc">
+        <front>
+          <title>AsciiRFC: Authoring Internet-Drafts And RFCs Using AsciiDoc - draft-ribose-asciirfc-08.</title><author surname="Unknown"></author>
+        </front>
+        <refcontent>I-D.ribose-asciirfc-08</refcontent>
+        <seriesInfo value="ribose-asciirfc-08" name="Internet-Draft"></seriesInfo>
+      </reference>
+      <reference target="https://www.rfc-editor.org/info/rfc3552" anchor="RFC3552">
+        <front>
+          <title>Guidelines for Writing RFC Text on Security Considerations</title>
+          <author fullname="E. Rescorla" asciiFullname="E. Rescorla"></author>
+          <author fullname="B. Korver" asciiFullname="B. Korver"></author>
+          <date month="July" year="2003"></date>
+          <keyword>RFC</keyword>
+          <keyword>Request for Comment </keyword>
+          <keyword>Security Considerations</keyword>
+          <abstract>    <t anchor="_5612a9a3-d47a-bdc1-11f3-2ba77b4967bc">All RFCs are required to have a Security Considerations section.  Historically, such sections have been relatively weak.  This document provides guidelines to RFC authors on how to write a good Security Considerations section.  This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.</t>
+  </abstract>
+        </front>
+        <format target="https://www.rfc-editor.org/info/rfc3552" type="src"></format>
+        <refcontent>RFC 3552</refcontent>
+        <seriesInfo value="3552" name="RFC"></seriesInfo>
+        <seriesInfo value="10.17487/RFC3552" name="DOI"></seriesInfo>
+      </reference>
+      <reference target="https://www.rfc-editor.org/info/rfc5378" anchor="RFC5378">
+        <front>
+          <title>Rights Contributors Provide to the IETF Trust</title>
+          <author fullname="S. Bradner" asciiFullname="S. Bradner" role="editor"></author>
+          <author fullname="J. Contreras" asciiFullname="J. Contreras" role="editor"></author>
+          <date month="November" year="2008"></date>
+          <keyword>intellectual property rights</keyword>
+          <keyword>copyright</keyword>
+          <keyword>ipr</keyword>
+          <abstract>    <t anchor="_7d12f5dd-4dbc-887e-dea7-9f62b961492c">The IETF policies about rights in Contributions to the IETF are designed to ensure that such Contributions can be made available to the IETF and Internet communities while permitting the authors to retain as many rights as possible.  This memo details the IETF policies on rights in Contributions to the IETF.  It also describes the objectives that the policies are designed to meet.  This memo obsoletes RFCs 3978 and 4748 and, with BCP 79 and RFC 5377, replaces Section 10 of RFC 2026.  This document specifies an Internet Best Current Practices for the Internet Community, and requests discussion and suggestions for improvements.</t>
+  </abstract>
+        </front>
+        <format target="https://www.rfc-editor.org/info/rfc5378" type="src"></format>
+        <refcontent>RFC 5378</refcontent>
+        <seriesInfo value="5378" name="RFC"></seriesInfo>
+        <seriesInfo value="10.17487/RFC5378" name="DOI"></seriesInfo>
+      </reference>
+      <reference target="https://www.rfc-editor.org/info/rfc7253" anchor="RFC7253">
+        <front>
+          <title>The OCB Authenticated-Encryption Algorithm</title>
+          <author fullname="T. Krovetz" asciiFullname="T. Krovetz"></author>
+          <author fullname="P. Rogaway" asciiFullname="P. Rogaway"></author>
+          <date month="May" year="2014"></date>
+          <keyword>OCB</keyword>
+          <keyword>AEAD</keyword>
+          <keyword>authenticated-encryption</keyword>
+          <abstract>    <t anchor="_7aa59a80-a48a-ee4a-597d-ed86cb7e5072">This document specifies OCB, a shared-key blockcipher-based encryption scheme that provides confidentiality and authenticity for plaintexts and authenticity for associated data.  This document is a product of the Crypto Forum Research Group (CFRG).</t>
+  </abstract>
+        </front>
+        <format target="https://www.rfc-editor.org/info/rfc7253" type="src"></format>
+        <refcontent>RFC 7253</refcontent>
+        <seriesInfo value="7253" name="RFC"></seriesInfo>
+        <seriesInfo value="10.17487/RFC7253" name="DOI"></seriesInfo>
+      </reference>
+      <reference anchor="RNP">
+        <front>
+          <title>RNP: A C library approach to OpenPGP</title><author surname="Unknown"></author>
+        </front>
+      </reference>
+    </references>
+    <section anchor="appendix-a"><name>Examples</name>
+
+<section anchor="_example_1"><name>Example 1</name>
+
+<t anchor="_8fde1494-f500-ad88-f7eb-0cd59f607a86">Here's an example of a properly wrapped code snippet in
+accordance with rules specified in <xref target="code-snippets"></xref>.</t>
+
+<sourcecode anchor="_e07feb7d-3e11-2aee-e7d5-1b3a16b3f7a2" type="json"><![CDATA[<CODE BEGINS>
+{
+  "code": {
+    "encoding": "ascii",
+    "type":     "rfc",
+    "authors":  [ "Josiah Carberry", "Truman Grayson" ]
+  }
+}
+<CODE ENDS>]]></sourcecode>
+
+</section>
+</section>
+  </back>
+</rfc>

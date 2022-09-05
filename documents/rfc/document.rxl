@@ -1,0 +1,23 @@
+<bibdata type="standard">
+<title language="en" format="text/plain" type="main">A Minimal Internet-Draft In AsciiRFC</title>
+
+<title language="en" format="text/plain" type="abbrev">AsciiRFC Example</title>
+<uri>https://www.brown.edu</uri><contributor><role type="author"/><person>
+<name><completename>Josiah Stinkney Carberry</completename></name>
+<phone>+1 401 863 1000</phone><email>josiah.carberry@ribose.com</email></person></contributor><contributor><role type="author"/><person>
+<name><completename>Truman Grayson</completename></name>
+<phone>+1 401 863 1000</phone><email>truman.grayson@ribose.com</email></person></contributor><contributor><role type="publisher"/><organization>
+<name>Internet Engineering Task Force</name>
+<abbreviation>IETF</abbreviation></organization></contributor><version><revision-date>2018-12-12</revision-date></version><language>en</language><script>Latn</script><abstract><p>This document provides a template on how to author (or migrate!)
+a new Internet-Draft / RFC in the AsciiRFC format.</p>
+
+<note><p>This template requires usage of the Metanorma toolchain and the
+  <tt>metanorma-ietf</tt> Ruby gem.</p>
+</note>
+</abstract><status><stage>informational</stage></status><copyright><from>2022</from><owner><organization>
+<name>Internet Engineering Task Force</name>
+<abbreviation>IETF</abbreviation></organization></owner></copyright><series type="stream">
+<title>independent</title>
+</series><series type="intended">
+<title>informational</title>
+</series><ext><doctype>internet-draft</doctype><area>Internet</area><ipr>trust200902</ipr><pi><tocinclude>yes</tocinclude></pi></ext></bibdata>

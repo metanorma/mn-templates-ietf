@@ -1,0 +1,113 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>IETF deliverable templates in Metanorma AsciiDoc</title><contributor><role type='author'/><organization><name>IETF: Internet Engineering Task Force</name></organization></contributor><relation type='partOf'><bibdata type="standard">
+  <title type="main" format="text/plain" language="en">A Minimal Internet-Draft In AsciiRFC</title>
+  <title type="abbrev" format="text/plain" language="en">AsciiRFC Example</title>
+  <uri>https://www.brown.edu</uri>
+  <uri type="html">documents/rfc/document.html</uri>
+  <uri type="rxl">documents/rfc/document.rxl</uri>
+  <uri type="txt">documents/rfc/document.txt</uri>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename>Josiah Stinkney Carberry</completename>
+      </name>
+      <phone>+1 401 863 1000</phone>
+      <email>josiah.carberry@ribose.com</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename>Truman Grayson</completename>
+      </name>
+      <phone>+1 401 863 1000</phone>
+      <email>truman.grayson@ribose.com</email>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>
+    </organization>
+  </contributor>
+  <version>
+    <revision-date>2018-12-12</revision-date>
+  </version>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract><p>a new Internet-Draft / RFC in the AsciiRFC format.</p>&lt;note&gt;<p><tt>metanorma-ietf</tt> Ruby gem.</p>&lt;/&gt;
+&lt;/note&gt;</abstract>
+  <status>
+    <stage>informational</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Internet Engineering Task Force</name>
+        <abbreviation>IETF</abbreviation>
+      </organization>
+    </owner>
+  </copyright>
+  <series type="stream">
+    <title>independent</title>
+  </series>
+  <series type="intended">
+    <title>informational</title>
+  </series>
+  <ext>
+    <doctype>internet-draft</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <fetched>2022-09-05</fetched>
+  <title format="text/plain" language="en" script="Latn">A Minimal Internet-Draft In AsciiRFC</title>
+  <uri type="xml">documents/rfc/document.rfc.xml</uri>
+  <docidentifier type="Internet-Draft" primary="true"/>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Internet Engineering Task Force</name>
+      <abbreviation>IETF</abbreviation>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en">Josiah Stinkney Carberry</completename>
+      </name>
+      <address>
+        <city/>
+        <country/>
+      </address>
+      <phone>+1 401 863 1000</phone>
+      <email>josiah.carberry@ribose.com</email>
+      <uri/>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en">Truman Grayson</completename>
+      </name>
+      <address>
+        <city/>
+        <country/>
+      </address>
+      <phone>+1 401 863 1000</phone>
+      <email>truman.grayson@ribose.com</email>
+      <uri/>
+    </person>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">&amp;lt;t&amp;gt;&amp;lt;/&amp;gt;This document provides a template on how to author (or migrate!) a new Internet-Draft / RFC in the AsciiRFC format.&amp;lt;/p&amp;gt;</abstract>
+  <ext>
+    <doctype>rfc</doctype>
+  </ext>
+</bibdata></relation>
+</relaton-collection>

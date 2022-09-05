@@ -1,0 +1,48 @@
+/__w/mn-templates-ietf/mn-templates-ietf/site/documents/rfc/document.err errors
+
+
+== Bibliography
+
+(XML Line 000237): Reference RNP is missing a document identifier (docid)
+	<clause id="_rnp_a_c_library_approach_to_openpgp" inline-header="false" bibitem="true" obligation="informative">
+	
+	<dl id="_d87b2d55-d329-4dff-9239-f6a4fb64357d"><dt>id</dt>
+	
+	<dt>contributor</dt>
+
+
+== Crossreferences
+
+(XML Line 000114): RNP does not have a corresponding anchor ID in the bibliography!
+	<eref target="RNP" type="inline" bibitemid="RNP" citeas=""/>
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000065): Hanging paragraph in clause
+	<clause id="main" inline-header="false" obligation="normative">
+	<title>Main content</title>
+	<p id="_4d5ec47e-6958-0d17-e665-dc7fc6be196c">This is where you place the main content, and the following
+	serves as a placeholder for your text.</p>
+	
+(XML Line 000072): Hanging paragraph in clause
+	<clause id="_getting_started" inline-header="false" obligation="normative">
+	<title>Getting started</title>
+	<p id="_cecbbf3c-9d3d-43e9-6afd-83cc322dbf94">The Metanorma and RFC toolchains <bcp14>MUST</bcp14> be available locally to
+	build this document template.</p>
+	
+(XML Line 000138): Table should have title
+	<table id="_1d1d19b5-5b52-7aab-d831-95aeb3a0c47d"><thead><tr><th valign="top" align="left">Security issue</th>
+	<th valign="top" align="left">Discussed in</th>
+	</tr></thead>
+	<tbody><tr><th valign="top" align="left">Confidentiality</th>
+	<td valign="top" align="left"><eref type="inline" bibitemid="RFC3552" citeas="RFC 3552">2.1.1 of</eref></td>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000007:46): element "contributor" not allowed yet; missing required element "docidentifier"
+(XML Line 000176:80): attribute "inline-header" not allowed here; expected attribute "language", "numbered", "obligation", "removeInRFC", "script" or "toc"
+(XML Line 000230:30): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000234:30): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 000271:11): element "bibitem" incomplete; missing required element "docidentifier"

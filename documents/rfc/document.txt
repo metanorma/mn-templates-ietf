@@ -1,0 +1,336 @@
+
+
+
+
+Network Working Group                                     J. S. Carberry
+Internet-Draft                                                          
+Intended status: Informational                                T. Grayson
+Expires: 9 March 2023                                   5 September 2022
+
+
+                  A Minimal Internet-Draft In AsciiRFC
+
+Abstract
+
+   This document provides a template on how to author (or migrate!) a
+   new Internet-Draft / RFC in the AsciiRFC format.
+
+Note
+
+   This template requires usage of the Metanorma toolchain and the
+   metanorma-ietf Ruby gem.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 9 March 2023.
+
+Copyright Notice
+
+   Copyright (c) 2022 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.
+
+
+
+
+
+
+Carberry & Grayson        Expires 9 March 2023                  [Page 1]
+
+Internet-Draft              AsciiRFC Example              September 2022
+
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+   2.  Terms and definitions . . . . . . . . . . . . . . . . . . . .   2
+   3.  Symbols And Abbreviations . . . . . . . . . . . . . . . . . .   3
+   4.  Main content  . . . . . . . . . . . . . . . . . . . . . . . .   3
+     4.1.  Getting started . . . . . . . . . . . . . . . . . . . . .   3
+       4.1.1.  Metanorma toolchain . . . . . . . . . . . . . . . . .   3
+       4.1.2.  XML RFC toolchain . . . . . . . . . . . . . . . . . .   3
+     4.2.  Referencing external content  . . . . . . . . . . . . . .   3
+     4.3.  Code snippets . . . . . . . . . . . . . . . . . . . . . .   4
+   5.  Security Considerations . . . . . . . . . . . . . . . . . . .   4
+   6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   4
+   7.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   4
+   8.  Normative References  . . . . . . . . . . . . . . . . . . . .   4
+   9.  Informative References  . . . . . . . . . . . . . . . . . . .   5
+   Appendix A.  Examples . . . . . . . . . . . . . . . . . . . . . .   5
+     A.1.  Example 1 . . . . . . . . . . . . . . . . . . . . . . . .   5
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   6
+
+1.  Introduction
+
+   AsciiRFC [I-D.ribose-asciirfc] is an extremely simple way to author
+   Internet-Drafts and RFCs without needing to manually craft RFC XML
+   conforming to [RFC7991].
+
+   This is a template specifically made for authors to easily start with
+   creating an Internet-Draft conforming to [RFC7991] and submittable to
+   the IETF datatracker.
+
+2.  Terms and definitions
+
+   No terms and definitions are listed in this document.
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "*NOT RECOMMENDED*", "MAY",
+   and "OPTIONAL" in this document are to be interpreted as described in
+   BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all
+   capitals, as shown here.
+
+   This document also refers to the following terms and definitions:
+
+   AsciiRFC  an AsciiDoc-derived syntax used for authoring RFCs and
+      Internet-Drafts, as defined in [I-D.ribose-asciirfc].
+
+
+
+
+
+
+
+Carberry & Grayson        Expires 9 March 2023                  [Page 2]
+
+Internet-Draft              AsciiRFC Example              September 2022
+
+
+3.  Symbols And Abbreviations
+
+   ADRFC  abbreviated form of _AsciiRFC_
+
+4.  Main content
+
+   This is where you place the main content, and the following serves as
+   a placeholder for your text.
+
+   Subsections are used here for demonstration purposes.
+
+4.1.  Getting started
+
+   The Metanorma and RFC toolchains MUST be available locally to build
+   this document template.
+
+4.1.1.  Metanorma toolchain
+
+   You will need to have:
+
+   1.  Ruby: for running Metanorma
+
+   a.  metanorma-cli gem: for the Metanorma command-line interface
+
+   b.  metanorma-ietf gem: for converting AsciiRFC into XML RFC (v2 or
+       v3)
+
+4.1.2.  XML RFC toolchain
+
+   You will need to have:
+
+   1.  Python: for running xml2rfc
+
+       a.  xml2rfc: for converting RFC XML (v2 or v3) into TXT
+
+       b.  idnits: for submission preflight
+
+4.2.  Referencing external content
+
+   *  This is a published RFC [RFC7253]
+
+   *  This is an Internet-Draft [I-D.ribose-asciirfc]
+
+   *  This is an external reference [RNP]
+
+
+
+
+
+
+
+Carberry & Grayson        Expires 9 March 2023                  [Page 3]
+
+Internet-Draft              AsciiRFC Example              September 2022
+
+
+4.3.  Code snippets
+
+   Code snippets should be wrapped with <CODE BEGINS> and <CODE ENDS>
+   blocks, as required by the IETF Trust Legal Provisions (TLP) 4 parens
+   [IETF.TLP] specified in [RFC5378].
+
+5.  Security Considerations
+
+   Any security considerations should be placed here.
+
+   As described in Section 4 (here's how you refer a local anchor),
+   local tools have to be installed before the document template can be
+   built.
+
+   Running of these local tools MAY produce unintended side effects that
+   impact security.  For example
+
+                 +=================+====================+
+                 | Security issue  | Discussed in       |
+                 +=================+====================+
+                 | Confidentiality | 2.1.1 of [RFC3552] |
+                 +=================+--------------------+
+                 | Data Integrity  | 2.1.2 of [RFC3552] |
+                 +=================+--------------------+
+                 | Non-Repudiation | 2.2 of [RFC3552]   |
+                 +=================+--------------------+
+
+                                 Table 1
+
+6.  IANA Considerations
+
+   This document does not require any action by IANA.
+
+   But if it does, such as proposing changes to IANA registries, please
+   include them here.
+
+7.  Acknowledgements
+
+   The authors would like to thank their families.
+
+8.  Normative References
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", RFC 2119, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
+
+
+
+
+
+Carberry & Grayson        Expires 9 March 2023                  [Page 4]
+
+Internet-Draft              AsciiRFC Example              September 2022
+
+
+   [RFC7991]  Hoffman, P., "The "xml2rfc" Version 3 Vocabulary", RFC
+              7991, RFC 7991, DOI 10.17487/RFC7991, December 2016,
+              <https://www.rfc-editor.org/info/rfc7991>.
+
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", RFC 8174, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/info/rfc8174>.
+
+9.  Informative References
+
+   [IETF.TLP] "Legal Provisions Relating to IETF Documents.", IETF.TLP.
+
+   [I-D.ribose-asciirfc]
+              "AsciiRFC: Authoring Internet-Drafts And RFCs Using
+              AsciiDoc - draft-ribose-asciirfc-08.", I-D.ribose-
+              asciirfc-08, Work in Progress, Internet-Draft, ribose-
+              asciirfc-08, <https://datatracker.ietf.org/doc/html/
+              ribose-asciirfc-08>.
+
+   [RFC3552]  Rescorla, E. and B. Korver, "Guidelines for Writing RFC
+              Text on Security Considerations", RFC 3552, RFC 3552,
+              DOI 10.17487/RFC3552, July 2003,
+              <https://www.rfc-editor.org/info/rfc3552>.
+
+   [RFC5378]  Bradner, S., Ed. and J. Contreras, Ed., "Rights
+              Contributors Provide to the IETF Trust", RFC 5378,
+              RFC 5378, DOI 10.17487/RFC5378, November 2008,
+              <https://www.rfc-editor.org/info/rfc5378>.
+
+   [RFC7253]  Krovetz, T. and P. Rogaway, "The OCB Authenticated-
+              Encryption Algorithm", RFC 7253, RFC 7253,
+              DOI 10.17487/RFC7253, May 2014,
+              <https://www.rfc-editor.org/info/rfc7253>.
+
+   [RNP]      "RNP: A C library approach to OpenPGP".
+
+Appendix A.  Examples
+
+A.1.  Example 1
+
+   Here's an example of a properly wrapped code snippet in accordance
+   with rules specified in Section 4.3.
+
+
+
+
+
+
+
+
+
+Carberry & Grayson        Expires 9 March 2023                  [Page 5]
+
+Internet-Draft              AsciiRFC Example              September 2022
+
+
+   <CODE BEGINS>
+   {
+     "code": {
+       "encoding": "ascii",
+       "type":     "rfc",
+       "authors":  [ "Josiah Carberry", "Truman Grayson" ]
+     }
+   }
+   <CODE ENDS>
+
+Authors' Addresses
+
+   Josiah Stinkney Carberry
+   Phone: +1 401 863 1000
+   Email: josiah.carberry@ribose.com
+
+
+   Truman Grayson
+   Phone: +1 401 863 1000
+   Email: truman.grayson@ribose.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Carberry & Grayson        Expires 9 March 2023                  [Page 6]
